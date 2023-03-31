@@ -16,6 +16,7 @@
 		"resolveJsonModule": true,
 		"isolatedModules": true,
 		"esModuleInterop": true,
+		"noEmitOnError": false,
 		"plugins": [
 			{
 				"name": "typescript-plugin-css-modules"
