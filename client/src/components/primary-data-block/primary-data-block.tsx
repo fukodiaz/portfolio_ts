@@ -1,6 +1,7 @@
 import React, {FC, cloneElement, ReactElement} from 'react';
 
 import { socialsData, TypeSocial } from '../../data/socialsData';
+import { primaryData } from '../../data/primaryData';
 
 import styles from './primary-data-block.module.less';
 
