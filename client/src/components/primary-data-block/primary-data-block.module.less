@@ -11,6 +11,7 @@
 	justify-content: center;
 	align-items: center;
 	height: 100%;
+	width: 100%;
 }
 
 .firstContainerPrimaryData {
@@ -108,9 +109,159 @@
 		font-weight: 600;
 		}
 	}
-	//color:#893f45e6;
+	//color:#b8767be6;
 }
 
-.btnResume {
-	font-weight: 700;
+@media (max-width: 1100px) {
+	.personalPhoto {
+		width: 350px;
+		height: 350px;
+	}
+
+	.listSocialLinks {
+		margin: 33px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		width: 100%;
+	}
+
+	.primaryTitle {
+		font-size: 18px;
+	}
+
+	.primaryName {
+		font-size: 48px;
+	}
+
+	.primaryDescription {
+		margin-top: 1px;
+		margin-bottom: 3px;
+		font-size: 14px;
+		font-weight: 500px;
+	}
+
+	.boxPrimaryBtns {
+		margin-top: 16px;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 200px;
+		height: 120px;
+	}
+}
+
+@media (max-width: 900px) {
+	.personalPhoto { 
+		width: 250px;//300px;
+		height: 250px; //300px;
+	}
+
+	.iconLinkSocial {
+		width: 30px;
+		height: 30px;
+	}
+
+	.blockPersonalData {
+		margin-right: 6%;
+		margin-top: 10%;
+		margin-left: 4%;
+		width: 56%;//60%;
+	}
+
+	.boxPrimaryBtns {
+		margin-top: 16px;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 200px;
+		height: 120px;
+
+		& button:nth-child(2) {
+			display: none;
+		}
+	}
+}
+
+
+@media (max-width: 600px) {
+	.innerBoxPrimaryData {
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.personalPhoto {
+		width: 200px;
+		height: 200px;
+		left: 50%;
+		top: 30%;
+		border: 8px solid #eaeaea;
+		transform: translate(-50%, -50%);
+	}
+
+	.firstContainerPrimaryData {
+		flex: initial;
+		width: 100%;
+		height: 30%;
+	}
+
+	.iconLinkSocial {
+		display: none;
+	}
+
+	.secondContainerPrimaryData {
+		flex: initial;
+		justify-content: center;
+		align-items: center;
+		box-sizing: border-box;
+		padding: 0 32px;
+		width: 100%;
+		height: 70%;
+		background-color: #eaeaea;
+	}
+
+	.blockPersonalData {
+		margin-top: 20%;
+		margin-right: initial;
+		width: 100%;
+	}
+
+	.primaryTitle {
+		font-size: 16px;
+		text-align: center;
+	}
+
+	.primaryName {
+		font-size: 40px;
+		text-align: center;
+	}
+
+	.primaryDescription { 
+		margin: 0 auto;
+		font-size: 15px;
+		text-align: center;
+		width: 90%;
+	}
+
+	.boxPrimaryBtns {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+
+		& button {
+			margin-top: -20%;
+		}
+	}
+}
+
+
+@media (max-width: 500px) {
+	.blockPersonalData {
+		margin-top: 35%;
+	}
+}
+
+@media (max-width: 370px) {
+	.blockPersonalData {
+		margin-top: 60%;
+	}
 }

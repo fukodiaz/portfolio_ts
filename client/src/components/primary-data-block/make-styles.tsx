@@ -10,12 +10,11 @@ const useStyles = makeStyles((theme: Theme) => {
 			width: '150px',
 			fontSize: '16px',
 			height: '50px',
-			border: `3px solid #893F45B3`,
+			border: '3px solid #a06469e6',
 			transition: '100ms ease-out',
 			'&:hover': {
 				backgroundColor: '#893F45B3',
-				color: '#eaeaea',
-				border: `3px solid #893F45B3`,
+				color: '#eaeaea'
 			},
 			[theme.breakpoints.down('sm')]: {
 				width: '180px',
@@ -23,19 +22,19 @@ const useStyles = makeStyles((theme: Theme) => {
 		},
 		btnContacts: {
 			backgroundColor: '#893F45B3',
-			color: '#212121',
+			color: '#eaeaea',
 			borderRadius: '30px',
 			textTransform: 'inherit',
 			textDecoration: 'none',
 			width: '150px',
 			height: '50px',
 			fontSize: '16px',
-			border: `3px solid #893f45e6`,
+			border: `3px solid #a06469e6`,
 			transition: '100ms ease-out',
 			'&:hover': {
-				backgroundColor:'#212121',
-				color: '#eaeaea',
-				border: `3px solid #eaeaea`,
+				backgroundColor:'#eaeaea',
+				color: '#893F45B3',
+				border: `3px solid #a06469e6`,
 			},
 			[theme.breakpoints.down('sm')]: {
 				display: 'none',
