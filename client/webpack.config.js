@@ -98,6 +98,18 @@ const conf = {
 				]
 			},
 			{
+				test: /\.pdf$/,
+				use: [
+					{
+						loader: 'file-loader',
+						options: {
+							outputPath: 'files',
+							name: '[name].[ext]'
+						}
+					}
+				]
+			},
+			{
 				test: /\.(ttf|woff)$/,
 				use: [
 					{

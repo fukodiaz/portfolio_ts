@@ -1,12 +1,18 @@
 import React, {FC, cloneElement, ReactElement} from 'react';
 
+import { Button } from '@material-ui/core';
+import { NavHashLink as NavLink } from 'react-router-hash-link';
+
 import { socialsData, TypeSocial } from '../../data/socialsData';
 import { primaryData } from '../../data/primaryData';
 
+import useStyles from './make-styles'; // вынесенная в отдельный модуль стилизация кнопок 
 import styles from './primary-data-block.module.less';
+import resume from './resume.pdf';
 
 const PrimaryDataBlock:FC = () => {
 
+	const classes = useStyles();
 	const createSocialLink = ({link, label, nodeIcon, ariaLabel}: TypeSocial): ReactElement => {
 		return (
 			<li key={label}>
@@ -32,8 +38,35 @@ const PrimaryDataBlock:FC = () => {
 						}
 					</ul>
 				</div>
+				{
+					primaryData.image && (
+						<img src={primaryData.image} alt='my_photo' 
+								className={styles.personalPhoto} />
+					)
+				}
 				<div className={styles.secondContainerPrimaryData}>
-					gh
+					<div className={styles.blockPersonalData}>
+						<h2 className={styles.primaryTitle}>{primaryData.title}</h2>
+						<h2 className={styles.primaryName}>{primaryData.name}</h2>
+						<p className={styles.primaryDescription}>{primaryData.description}</p>
+
+						<div className={styles.boxPrimaryBtns}>
+							{
+								resume && (
+									<a href={resume} download='resume' target='_blank' rel='noreferrer'>
+										<Button className={classes.btnResume}>
+											Резюме
+										</Button>
+									</a>
+								)
+							}
+							<NavLink to='#' smooth={true}>
+								<Button className={classes.btnContacts}>
+									Контакты
+								</Button>
+							</NavLink>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
