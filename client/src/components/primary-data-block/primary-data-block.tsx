@@ -9,6 +9,7 @@ import { primaryData } from '../../data/primaryData';
 import useStyles from './make-styles'; // вынесенная в отдельный модуль стилизация кнопок 
 import styles from './primary-data-block.module.less';
 import resume from './resume.pdf';
+import photo from './Antwerp_1.jpg';
 
 const PrimaryDataBlock:FC = () => {
 
@@ -39,8 +40,8 @@ const PrimaryDataBlock:FC = () => {
 					</ul>
 				</div>
 				{
-					primaryData.image && (
-						<img src={primaryData.image} alt='my_photo' 
+					photo && (
+						<img src={photo} alt='my_photo' 
 								className={styles.personalPhoto} />
 					)
 				}
