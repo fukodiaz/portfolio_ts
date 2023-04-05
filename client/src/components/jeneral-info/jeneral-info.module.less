@@ -25,7 +25,146 @@
 }
 
 .rhomb {
-	margin-left: 27px;
+	margin-left: 21px;
+	margin-right: 7px;
 	font-size: 10px;
 	color: #893F45B3;
+}
+
+.wrapperContentInfo {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 128px;
+	height: fit-content;
+}
+
+.contentInfo {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-self: flex-start;
+	flex: 0.5;
+	//margin-top: 48px;
+	margin-left: 30px;
+	width: 100%;
+	height: fit-content;
+}
+
+.titleJeneralInfo {
+	margin-bottom: 40px;
+   font-size: 56px;
+	line-height: 1.15;
+	color: #893F45B3;
+}
+
+.descripJeneralInfo {
+	font-size: 18px;
+   color: #243829;
+}
+
+.boxImageJeneralInfo {
+	margin-top: 40px;
+   pointer-events: none;
+	& img {
+		width: 380px;
+		flex: 0.5;
+	}
+}
+
+
+@media (min-width: 992px) and (max-width: 1380px) {
+	.contentInfo {
+		margin-top: 18px;
+	}
+
+	.titleJeneralInfo {
+		margin-bottom: 30px;
+		font-size: 36px;
+	}
+
+	.descripJeneralInfo {
+		font-size: 17px;
+	}
+
+	.boxImageJeneralInfo {
+		& img {
+			width: 300px;
+		}
+	}
+}
+
+
+@media (max-width: 992px) {
+	.wrapperContentInfo {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: space-evenly;
+		align-items: center;
+		padding-top: 32px;
+	}
+
+	.contentInfo {
+		flex: 0.6;
+      box-sizing: border-box;
+      padding: 20px;
+		padding-top: 35px;
+		margin: 0;
+	}
+
+	.titleJeneralInfo {
+		margin-bottom: 20px;
+		font-size: 48px;
+	}
+
+	.descripJeneralInfo {
+		font-size: 17px;
+	}
+
+	.boxImageJeneralInfo {
+		margin-top: 68px;
+		& img {
+			flex: 0.4;
+			width: 250px;
+		}
+	}
+}
+
+
+@media (max-width: 800px) {
+	.titleJeneralInfo {
+		align-self: center;
+	}
+}
+
+
+@media (max-width: 600px) {
+	.contentInfo {
+		padding-top: 21px;
+	}
+
+	.rhomb {
+		font-size: 5px;
+	}
+
+	.line {
+		width: 93%;
+		height: 3px;
+		border-radius: 10px;
+	}
+
+	.titleJeneralInfo {
+		font-size: 40px;
+	}
+
+	.descripJeneralInfo {
+		font-size: 14px;
+	}
+
+	.boxImageJeneralInfo {
+		& img {
+			width: 200px;
+		}
+	}
 }
