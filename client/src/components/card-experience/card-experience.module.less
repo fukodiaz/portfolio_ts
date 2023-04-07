@@ -1,0 +1,98 @@
+.itemExperience {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items:flex-start;
+	margin-bottom: 24px;
+	box-sizing: border-box;
+	padding: 24px;
+	width: 90%;
+	height: 140px;
+	border-radius: 20px;
+	background: #893F45B3;
+	transition: background-color 200ms ease-in-out;
+	&:hover {
+		background: #be5c64b3;
+	}
+}
+
+.boxImgCardExperience {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	background-color: #fce147;
+}
+
+.imgCardExperience {
+	width: 36px;
+   pointer-events: none;
+}
+
+.innerBoxDescrExperience {
+	margin-left: 10px;
+}
+
+.dateExperience {
+	margin-bottom: 8px;
+	font-size: 14px;
+	font-weight: 700;
+	color: rgba(0,0,0,.7);
+}
+
+.specializationExper {
+	margin-bottom: 6px;
+	font-size: 20px;
+	font-weight: 600;
+	color: #fff;
+}
+
+.organizationExper {
+	font-size: 18px;
+   font-weight: 600;
+	color: rgba(255, 246, 246, 0.8);
+}
+
+
+@media (max-width: 992px) {
+	.itemExperience {
+		margin-bottom: 24px;
+		padding: 24px;
+		width: 100%;
+	}
+}
+
+@media (max-width: 800px) {
+	.itemExperience {
+		margin-bottom: 24px;
+		padding: 16px;
+		height: 130px;
+	}
+
+	.boxImgCardExperience {
+		width: 45px;
+		height: 45px;
+	}
+
+	.imgCardExperience {
+		width: 30px;
+	}
+
+	.dateExperience {
+		margin-bottom: 7px;
+		font-size: 14px;
+	}
+
+	.specializationExper {
+		font-size: 18px;
+      line-height: 126%;
+	}
+
+	.organizationExper {
+		font-size: 17px;
+		line-height: 126%;
+	}
+}
