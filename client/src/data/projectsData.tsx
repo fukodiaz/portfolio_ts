@@ -14,7 +14,7 @@ export type TypeProject = {
 export const projectsData: TypeProject[] = [
 	{
 		id: 1,
-		title: 'BEL_go',
+		title: 'BEL-go',
 		description: 'Личный учебный проект приложения, предусматривающего возможность аренды жилья из предложенных вариантов в одном из четырех городов Бельгии',
 		elsStack: ['React', 'Redux', 'Less'],
 		code: 'https://github.com/fukodiaz/BEL_go',
@@ -23,7 +23,16 @@ export const projectsData: TypeProject[] = [
 	},
 	{
 		id: 2,
-		title: 'Admin_account',
+		title: 'Admin-account',
+		description: 'Учебный проект, подразумевающий создание личного кабинета администратора системы',
+		elsStack: ['React', 'Redux', 'Less', 'Node.js', 'Redis'],
+		code: 'https://github.com/fukodiaz/admin_account',
+		deploy: 'https://admin-account.vercel.app/',
+		image: admin
+	},
+	{
+		id: 2,
+		title: 'Admin-account',
 		description: 'Учебный проект, подразумевающий создание личного кабинета администратора системы',
 		elsStack: ['React', 'Redux', 'Less', 'Node.js', 'Redis'],
 		code: 'https://github.com/fukodiaz/admin_account',
