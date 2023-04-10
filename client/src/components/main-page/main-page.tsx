@@ -6,6 +6,7 @@ import JeneralInfo from '../jeneral-info';
 import Skills from '../skills';
 import Experience from '../experience';
 import Projects from '../projects';
+import Contacts from '../contacts';
 import styles from './main-page.module.less';
 
 
@@ -19,6 +20,7 @@ const MainPage:FC = () => {
 			<Skills />
 			<Experience />
 			<Projects />
+			<Contacts />
 		</main>
 	);
 };
