@@ -1,0 +1,39 @@
+.boxFieldContacts {
+	width: 100%;
+}
+
+.labelFieldContacts {
+	display: inline-flex;
+	padding: 0 5px;
+	font-size: 14px;
+	font-weight: 600;
+	color: rgba(247, 98, 82, 0.9);
+	background-color: rgb(245, 240, 240);
+	transform: translate(25px, 50%);
+}
+
+.inputContacts,
+.textareaContacts {
+	margin-bottom: 32px;
+	box-sizing: border-box;
+	padding: 11px 11px;
+	font-family: 'Inter', 'Helvetica', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	color: rgba(0,0,0,.8);
+	width: 100%; 
+	height: 50px;
+	border: 4px solid rgba(238, 130, 118, 0.9);
+	border-radius: 15px;
+	background-color: transparent;
+	outline: none;
+	transition: border 0.2s ease-in-out;
+	&:focus {
+		border: 4px solid rgba(253, 89, 71, 0.9);
+	}
+}
+
+.textareaContacts {
+	height: 150px;
+	resize: none;
+}
