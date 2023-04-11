@@ -1,7 +1,11 @@
 import React, {
-	FC, ChangeEvent, cloneElement, ReactElement, useState, useContext, FormEvent
+	FC, ChangeEvent, cloneElement, ReactElement, 
+	useState, useContext, FormEvent,	SyntheticEvent
 } from 'react'
 import { Link } from 'react-router-dom'
+import { Snackbar, IconButton, SnackbarContent, 
+			SnackbarCloseReason } from '@material-ui/core';
+import CloseIcon from '@material-ui/icons/Close';
 
 import FieldContacts from '../field-contacts'
 import { PortfolioServiceContext } from '../portfolio-service-provider'
@@ -35,7 +39,8 @@ const Contacts: FC = () => {
 			</p>
 		</li>
 	) 
-
+	
+	// submit data from form-contacts
 	const { postDataContacts } = useContext(PortfolioServiceContext)
 	const [success, setSuccess] = useState(false)
 	const [errMessage, setErrMessage] = useState('')
@@ -68,6 +73,21 @@ const Contacts: FC = () => {
 		}
 	}
 
+	const stylesSnackbar = {
+		color: '#fff',
+		fontFamily: 'Inter',
+		backgroundColor: '#893f45'
+	}
+
+	const onClose = (e: SyntheticEvent<any>, reason: SnackbarCloseReason): void => {
+		if (reason === 'clickaway') {
+			return null
+		}
+
+		setIsModal(false)
+	};
+
+
 	return (
 		<section id='contacts' className={styles.contacts}>
 			<div className={styles.boxContacts}>
@@ -96,6 +116,14 @@ const Contacts: FC = () => {
 								</button>
 							</p>
 						</form>
+
+						<Snackbar open={isModal} onClose={onClose} autoHideDuration={5000}
+									anchorOrigin={{ vertical: 'top', horizontal: 'center',}}>
+							<SnackbarContent action={<ItemSnackbar onClose={onClose} />}
+													style={stylesSnackbar}
+													message={errMessage}
+							/>
+						</Snackbar>
 					</div>
 
 					<ul className={styles.listContacts}>
@@ -110,5 +138,16 @@ const Contacts: FC = () => {
 		</section>
 	)
 }
+
+const ItemSnackbar: FC<any> = ({onClose}) => {
+	return (
+		<>
+			<IconButton size='small' color='inherit' onClick={onClose}>
+				<CloseIcon fontSize='small' />
+			</IconButton>
+		</>
+	)
+}
+
 
 export default Contacts
