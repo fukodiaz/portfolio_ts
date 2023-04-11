@@ -12,6 +12,9 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
+
+app.use(express.json());
+app.use(express.urlencoded({extended: false}));
 //app.use(express.static('dist')); //for dev
 //app.use(rewrite('/api/*', '/$1'));
 
