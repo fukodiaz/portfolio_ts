@@ -1,7 +1,9 @@
-import React, {FC, ChangeEvent, useState} from 'react'
+import React, {FC, ChangeEvent, cloneElement, ReactElement, useState} from 'react'
+import { Link } from 'react-router-dom'
 
 import FieldContacts from '../field-contacts'
 
+import { contactsData, TypeContacts } from '../../data/contactsData'
 import { AiOutlineSend } from 'react-icons/ai'
 import imgContacts from './contacts.svg'
 import styles from './contacts.module.less'
@@ -14,6 +16,20 @@ const Contacts: FC = () => {
 	const onChangeName = (e: ChangeEvent<HTMLInputElement>):void => setName(e.target.value)
 	const onChangeEmail = (e: ChangeEvent<HTMLInputElement>):void => setEmail(e.target.value)
 	const onChangeMessage = (e: ChangeEvent<HTMLInputElement>):void => setMessage(e.target.value)
+	const createItemContact = ({label, link, content, nodeIcon}: TypeContacts): ReactElement => (
+		<li key={label} className={styles.itemContact}>
+			<Link to={link} className={styles.linkContact}>
+				{
+					cloneElement(nodeIcon, { className: styles.iconLinkContact })
+				}
+			</Link>
+			<p className={styles.boxContentContact}>
+				<Link to={link} className={styles.contentItemContact}>
+					{content}
+				</Link>
+			</p>
+		</li>
+	) 
 
 	return (
 		<section id='contacts' className={styles.contacts}>
@@ -45,14 +61,11 @@ const Contacts: FC = () => {
 						</form>
 					</div>
 
-					<div className={styles.personalContacts}>
-						<ul className={styles.listContacts}>
-
-						</ul>
-						<ul className={styles.listSocialMedia}>
-
-						</ul>
-					</div>
+					<ul className={styles.listContacts}>
+						{
+							contactsData.length && contactsData.map(createItemContact)
+						}
+					</ul>
 				</div>
 
 			</div>
