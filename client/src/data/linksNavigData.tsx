@@ -1,6 +1,6 @@
 import React, {ReactElement} from 'react';
-import { IoHomeSharp } from 'react-icons/io5';
-import { HiDocumentText } from 'react-icons/hi';
+import { IoHomeSharp, IoBriefcase } from 'react-icons/io5';
+import { HiDocumentText, HiAcademicCap, HiCollection } from 'react-icons/hi';
 import { FaUser} from 'react-icons/fa';
 import { MdPhone } from 'react-icons/md';
 
@@ -22,9 +22,19 @@ export const linksNavigData: TypeLink[] = [
 		nodeIcon: <FaUser />
 	},
 	{
-		title: 'Образование',
-		href: 'education',
-		nodeIcon: <HiDocumentText />
+		title: 'Навыки',
+		href: 'skills',
+		nodeIcon: <HiAcademicCap />
+	},
+	{
+		title: 'Опыт',
+		href: 'experience',
+		nodeIcon: <IoBriefcase />
+	},
+	{
+		title: 'Проекты',
+		href: 'projects',
+		nodeIcon: <HiCollection />
 	},
 	{
 		title: 'Контакты',

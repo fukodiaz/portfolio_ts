@@ -19,7 +19,7 @@ const Skills: FC = () => {
 	} 
 
 	return (
-		<section className={styles.boxSkills}>
+		<section id='skills' className={styles.boxSkills}>
 			<p className={styles.wrapperHeaderSkills}>
 				<h2 className={styles.headerSkills}>Навыки</h2>
 			</p>
