@@ -48,7 +48,7 @@ const Navigation: FC = () => {
 	return (
 		<nav className={styles.navigation}>
 			<div className={styles.boxNavigation}>
-				<h2 className={styles.blockAuthor}>Author</h2>
+				<h2 className={styles.blockAuthor}>Ilya Sept</h2>
 				<IoMenuSharp className={classes.menuNavigation} aria-label='Menu'
 									onClick={onShow} />
 			</div>

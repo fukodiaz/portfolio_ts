@@ -18,6 +18,13 @@
 	width: 100%;
 }
 
+.blockAuthor {
+	font-family: 'Arizonia', cursive;
+	font-size: 32px;
+	line-height: 1.1;
+	color: #f0eeee;
+}
+
 .drawer > [class*='MuiBackdrop-root'] {
 	background: rgba(33, 33, 33, 0.15) !important;
 	backdrop-filter: blur(20px) !important;
@@ -68,6 +75,12 @@
 }
 
 @media (max-width:600px) {
+	.blockAuthor {
+		margin-top: -15px;
+		margin-left: -3px;
+		font-size: 25px;
+	}
+
 	[class*='MuiDrawer-paper'] {
 		border-radius: 0 !important;
 	}
