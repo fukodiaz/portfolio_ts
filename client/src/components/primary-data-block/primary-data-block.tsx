@@ -16,7 +16,7 @@ const PrimaryDataBlock:FC = () => {
 	const classes = useStyles();
 	const createSocialLink = ({link, label, nodeIcon, ariaLabel}: TypeSocial): ReactElement => {
 		return (
-			<li key={label}>
+			<li key={label} className={styles.itemSocialLink}>
 				<a href={link} target='_blank' rel='noreferrer'
 					className={styles.socialLink}>
 					{

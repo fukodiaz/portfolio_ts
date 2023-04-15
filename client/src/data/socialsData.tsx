@@ -1,4 +1,5 @@
 import React, {ReactElement} from 'react';
+import { FiAtSign } from 'react-icons/fi';
 import {
 	FaGithub,
 	FaTelegram
@@ -23,5 +24,11 @@ export const socialsData: TypeSocial[] = [
 		link: 'https://t.me/IlyaSept',
 		ariaLabel: 'Telegram',
 		nodeIcon: <FaTelegram />
+	},
+	{
+		label: 'gmail',
+		link: 'mailto:fukodiaz@gmail.com',
+		ariaLabel: 'mail',
+		nodeIcon: <FiAtSign />
 	}
 ];
