@@ -61,7 +61,7 @@ const PrimaryDataBlock:FC = () => {
 									</a>
 								)
 							}
-							<NavLink to='#' smooth={true}>
+							<NavLink to='#contacts' smooth={true}>
 								<Button className={classes.btnContacts}>
 									Контакты
 								</Button>
