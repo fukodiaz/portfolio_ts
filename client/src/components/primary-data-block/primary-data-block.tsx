@@ -49,7 +49,8 @@ const PrimaryDataBlock:FC = () => {
 					<div className={styles.blockPersonalData}>
 						<h2 className={styles.primaryTitle}>{primaryData.title}</h2>
 						<h2 className={styles.primaryName}>{primaryData.name}</h2>
-						<p className={styles.primaryDescription}>{primaryData.description}</p>
+						<p className={styles.primaryDescription}>{primaryData.descriptionFirst}</p>
+						<p className={styles.primaryDescription}>{primaryData.descriptionSecond}</p>
 
 						<div className={styles.boxPrimaryBtns}>
 							{
