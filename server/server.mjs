@@ -8,6 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 const corsOptions = {
 	origin: 'https://portfolio-rho-ruby-84.vercel.app',//'http://localhost:8081',
+	credentials: true,
 	optionSuccessStatus: 200
 };
 
