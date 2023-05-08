@@ -1,7 +1,7 @@
 {
 	"compilerOptions": {
 		"outDir": "./dist",
-		"target": "esnext",
+		"target": "es6",
 		"lib": [
 			"DOM",
 			"DOM.Iterable",
@@ -17,7 +17,9 @@
 		"isolatedModules": true,
 		"esModuleInterop": true,
 		"noEmitOnError": false,
-		"skipLibCheck": true,	
+		"skipLibCheck": true,
+		"moduleDetection": "force",
+		"strict": false,	
 		"plugins": [
 			{
 				"name": "typescript-plugin-css-modules"
