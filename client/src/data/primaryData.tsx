@@ -7,9 +7,9 @@ interface PrimaryData {
 }
 
 export const primaryData: PrimaryData = {
-	name: 'Илья',
+	name: 'Илья Степаненко',
 	title: 'Frontend разработчик',
-	descriptionFirst: 'Создаю приятные и удобные web-приложения.',
-	descriptionSecond: 'На данный момент сосредоточен',
+	descriptionFirst: 'Создаю web-приложения на основе Angular и React+Redux',
+	descriptionSecond: 'Пишу небольшие RESTful-приложения с помощью Expess.js',
 	image: './Antwerp_1.jpg'
 }
