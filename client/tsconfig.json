@@ -18,8 +18,7 @@
 		"esModuleInterop": true,
 		"noEmitOnError": false,
 		"skipLibCheck": true,
-		"moduleDetection": "force",
-		"strict": false,	
+		"forceConsistentCasingInFileNames": true,
 		"plugins": [
 			{
 				"name": "typescript-plugin-css-modules"
