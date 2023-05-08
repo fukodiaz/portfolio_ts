@@ -5,9 +5,9 @@ import rewrite from 'express-urlrewrite';
 import {default as contactsRouter} from './routers/contacts-router.mjs';
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 const corsOptions = {
-	origin: '*',//'http://localhost:8081',
+	origin: 'https://portfolio-rho-ruby-84.vercel.app',//'http://localhost:8081',
 	optionSuccessStatus: 200
 };
 
