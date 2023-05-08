@@ -62,6 +62,14 @@
 .descripJeneralInfo {
 	font-size: 18px;
    color: #243829;
+	& p {
+		margin-bottom: 16px;
+		box-sizing: border-box;
+		padding: 0 17px 0 6px; 
+	}
+	& .descripSecond {
+		color: rgba(0,0,0, .8);
+	}
 }
 
 .boxImageJeneralInfo {
@@ -80,7 +88,7 @@
 	}
 
 	.titleJeneralInfo {
-		margin-bottom: 30px;
+		margin-bottom: 33px;
 		font-size: 36px;
 	}
 
@@ -114,12 +122,17 @@
 	}
 
 	.titleJeneralInfo {
-		margin-bottom: 20px;
+		margin-bottom: 28px;
+		margin-left: 36px;
 		font-size: 48px;
 	}
 
 	.descripJeneralInfo {
 		font-size: 17px;
+		& p {
+			margin-bottom: 19px;
+			padding: 0 110px 0 27px;
+		}
 	}
 
 	.boxImageJeneralInfo {
@@ -134,7 +147,15 @@
 
 @media (max-width: 800px) {
 	.titleJeneralInfo {
+		margin-bottom: 30px;
+		margin-left: 0;
 		align-self: center;
+	}
+
+	.descripJeneralInfo {
+		& p {
+			padding: 0 60px 0 26px;
+		}
 	}
 }
 
@@ -168,7 +189,10 @@
 	}
 
 	.descripJeneralInfo {
-		font-size: 14px;
+		font-size: 15px;
+		& p {
+			margin-right: 0px;
+		}
 	}
 
 	.boxImageJeneralInfo {

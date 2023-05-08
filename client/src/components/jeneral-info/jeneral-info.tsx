@@ -17,8 +17,15 @@ const JeneralInfo: FC = () => {
 				<div className={styles.contentInfo}>
 					<h3 className={styles.titleJeneralInfo}>{jeneralInfoData.title}</h3>
 					<div className={styles.descripJeneralInfo}>
-						{jeneralInfoData.descriptionFirst} <br />
-						{jeneralInfoData.descriptionSecond}
+						<p className={styles.descripFirst}>
+							{jeneralInfoData.descriptionFirst}
+						</p>
+						<p className={styles.descripSecond}>
+							{jeneralInfoData.descriptionSecond}
+						</p>
+						<p className={styles.descripThird}>
+							{jeneralInfoData.descriptionThird}
+						</p>
 					</div>
 				</div>
 				<div className={styles.boxImageJeneralInfo}>
