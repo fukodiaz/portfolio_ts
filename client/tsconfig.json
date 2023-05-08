@@ -17,6 +17,7 @@
 		"isolatedModules": true,
 		"esModuleInterop": true,
 		"noEmitOnError": false,
+		"skipLibCheck": true,
 		"plugins": [
 			{
 				"name": "typescript-plugin-css-modules"
