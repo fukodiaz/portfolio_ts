@@ -11,6 +11,7 @@
 	"author": "Fuko",
 	"license": "ISC",
 	"browserslist": "> 1%, not dead",
+	"type": "module",
 	"dependencies": {
 		"@material-ui/core": "^4.12.4",
 		"@material-ui/icons": "^4.11.3",

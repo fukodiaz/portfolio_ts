@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-		"outDir": "dist",
+		"outDir": "./dist",
 		"target": "es6",
 		"lib": [
 			"DOM",
@@ -17,11 +17,7 @@
 		"isolatedModules": true,
 		"esModuleInterop": true,
 		"noEmitOnError": false,
-		"skipLibCheck": true,
-		"baseUrl": ".",
-		"paths": {
-			"*": ["node_modules/*", "src/types/*"]
-		},
+		"skipLibCheck": true,	
 		"plugins": [
 			{
 				"name": "typescript-plugin-css-modules"
