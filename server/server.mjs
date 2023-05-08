@@ -7,7 +7,7 @@ import {default as contactsRouter} from './routers/contacts-router.mjs';
 const app = express();
 const PORT = process.env.PORT || 3000;
 const corsOptions = {
-	origin: 'http://localhost:8081',
+	origin: 'https://portfolio-api-theta-mocha.vercel.app',//'http://localhost:8081',
 	optionSuccessStatus: 200
 };
 
