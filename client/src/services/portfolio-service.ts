@@ -1,10 +1,10 @@
 import { TypeContacts } from './types';
 
 export default class PortfolioService {
-	readonly apiBase='http://localhost:3000'
+	private apiBase='https://portfolio-api-theta-mocha.vercel.app/'//'http://localhost:3000'
 
 	postData = async (url: string, data: any): Promise<any> => {
-		console.log(data, 444)///
+		console.log(data, 444)
 		const res = await fetch(`${this.apiBase}${url}`, {
 			mode: 'cors',
 			//credentials: "include",
