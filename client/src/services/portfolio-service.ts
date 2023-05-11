@@ -11,7 +11,7 @@ export default class PortfolioService {
 			method: 'POST',
 			headers: {
 				'Access-Control-Allow-Origin': '*',
-				'Content-type': 'application/json'
+				//'Content-type': 'application/json'
 			},
 			body: data
 		});
