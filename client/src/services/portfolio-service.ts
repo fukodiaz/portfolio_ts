@@ -6,12 +6,12 @@ export default class PortfolioService {
 	postData = async (url: string, data: any): Promise<any> => {
 		console.log(data, 444)
 		const res = await fetch(`${this.apiBase}${url}`, {
-			mode: 'cors',
+			mode: 'no-cors',
 			//credentials: "include",
 			method: 'POST',
 			headers: {
 				'Access-Control-Allow-Origin': '*',
-				//'Content-type': 'application/json'
+				'Content-type': 'application/json'
 			},
 			body: data
 		});
