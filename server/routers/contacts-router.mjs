@@ -5,7 +5,7 @@ import * as fs from 'fs';
 const router = Router();
 
 router.post('/', async (req, res) => {
-	const file = path.join(process.cwd(), 'data', 'db.json'); //add 'server' only for production
+	const file = path.join(process.cwd(), 'server', 'data', 'db.json'); //add 'server' only for production
 	const dataContacts = fs.readFileSync(file, 'utf8'); 
 	const novelObjContacts = {
 		...req.body,
@@ -19,6 +19,7 @@ router.post('/', async (req, res) => {
 		error ? console.log('error --writing file: ', error) : null
 	})
 	res.setHeader('Content-Type', 'application/json');
+
 	return res.send(novelObjContacts);
 });
 
