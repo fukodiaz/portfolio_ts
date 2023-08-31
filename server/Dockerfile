@@ -10,6 +10,7 @@ FROM alpine:3.18
 WORKDIR /var/www/html
 
 # add secret file .env
+RUN --mount=type=secret,id=_env,dst=/etc/secrets/.env cat /etc/secrets/.env
 RUN --mount=type=secret,id=_env,dst=/etc/secrets/.env cp /etc/secrets/.env /var/www/html/.env
 
 # Install packages and remove default server definition
@@ -43,7 +44,7 @@ RUN apk add --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing/ \
 	openssh \
 	&& curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer --version=2.5.1
 
-COPY composer.json /var/www/html/
+COPY composer.json /var/www/html
 RUN  php /usr/bin/composer install
 
 # Configure nginx - http
