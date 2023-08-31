@@ -10,7 +10,6 @@ FROM alpine:3.18
 WORKDIR /var/www/html
 
 # add secret file .env
-RUN --mount=type=secret,id=_env,dst=/etc/secrets/.env cat /etc/secrets/.env
 RUN --mount=type=secret,id=_env,dst=/etc/secrets/.env cp /etc/secrets/.env /var/www/html/.env
 
 # Install packages and remove default server definition
@@ -19,9 +18,8 @@ RUN apk add \
 	nginx \
 	supervisor \
 	composer
-RUN apk --no-cache --repository https://dl-cdn.alpinelinux.org/alpine/edge/main add  \
+RUN apk add  \
 	icu-libs \
-	&& apk --no-cache --repository https://dl-cdn.alpinelinux.org/alpine/edge/community add \
 	php82 \
 	php82-ctype \
 	php82-curl \
@@ -40,8 +38,7 @@ RUN apk --no-cache --repository https://dl-cdn.alpinelinux.org/alpine/edge/main 
 	php82-xmlreader  \
 	&& ln -sf /usr/bin/php82 /usr/bin/php
 
-RUN apk add --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing/ \
-	openssh \
+RUN apk add openssh \
 	&& curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer --version=2.5.1
 
 COPY composer.json /var/www/html
