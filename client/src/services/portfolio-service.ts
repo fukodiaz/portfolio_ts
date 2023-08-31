@@ -6,7 +6,6 @@ export default class PortfolioService {
 	private apiBase='https://portfolio-api-2yrv.onrender.com';
 
 	postData = async (url: string, data: any): Promise<any> => {
-		console.log(data, 444)
 		const res = await fetch(`${this.apiBase}${url}`, {
 			mode: 'cors',
 			//credentials: "include",
