@@ -19,9 +19,9 @@ RUN apk add \
 	nginx \
 	supervisor \
 	composer
-RUN apk --repository https://dl-cdn.alpinelinux.org/alpine/edge/main add  \
+RUN apk --no-cache --repository https://dl-cdn.alpinelinux.org/alpine/edge/main add  \
 	icu-libs \
-	&& apk --repository https://dl-cdn.alpinelinux.org/alpine/edge/community add \
+	&& apk --no-cache --repository https://dl-cdn.alpinelinux.org/alpine/edge/community add \
 	php82 \
 	php82-ctype \
 	php82-curl \
