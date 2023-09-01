@@ -1,6 +1,7 @@
 import bel_go from './png/bel_go.png'
 import admin from './png/admin.png'
 import tasks from './png/tasks.png'
+import recipes from './png/recipes.png'
 import table from './png/table.png'
 import sedona from './png/sedona.png'
 
@@ -19,7 +20,7 @@ export const projectsData: TypeProject[] = [
 		id: 1,
 		title: 'BEL-go',
 		description: 'Личный учебный проект приложения, предусматривающего возможность аренды жилья из предложенных вариантов в одном из четырех городов Бельгии',
-		elsStack: ['React', 'Redux', 'Less'],
+		elsStack: ['React', 'Redux', 'Less', 'PHP 8', 'Slim 4', 'MySQL'],
 		code: 'https://github.com/fukodiaz/BEL_go',
 		deploy: 'https://bel-go.vercel.app/',
 		image: bel_go
@@ -44,6 +45,15 @@ export const projectsData: TypeProject[] = [
 	},
 	{
 		id: 4,
+		title: 'Recipe Book',
+		description: 'Приложение, позволяющее осуществлять некоторые опции (редактирование, добавление и т.д.) со списком рецептов и ингредиентов',
+		elsStack: ['Angular', 'Firebase', 'Bootstrap 3'],
+		code: 'https://github.com/fukodiaz/recipe-book',
+		deploy: 'https://recipe-book-cyan.vercel.app/',
+		image: recipes
+	},
+	{
+		id: 5,
 		title: 'Table',
 		description: 'Выполненное мною тестовое задание, предполагавшее создание таблицы, отображающей данные пользователей',
 		elsStack: ['React', 'Redux', 'Less'],
@@ -52,7 +62,7 @@ export const projectsData: TypeProject[] = [
 		image: table
 	},
 	{
-		id: 5,
+		id: 6,
 		title: 'Sedona',
 		description: 'Cтатический сайт "Sedona" на основе макетов HTML Academy',
 		elsStack: ['Less', 'JavaScript'],
