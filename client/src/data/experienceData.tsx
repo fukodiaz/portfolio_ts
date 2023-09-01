@@ -11,15 +11,24 @@ export interface ExperienceData {
 export const experienceData: ExperienceData[] = [
 	{
 		id: 1,
-		organization: 'Экосистема Альфа',
-		specialization: 'Frontend-разработчик',
-		startYear: '2022',
-		startMonth: 'Август',
+		organization: 'Самообучение',
+		specialization: 'Разработка web-сервисов на PHP',
+		startYear: '2023',
+		startMonth: 'Март',
 		endYear: '2023',
-		endMonth: 'Апрель'
+		endMonth: 'Сентябрь'
 	},
 	{
 		id: 2,
+		organization: 'Экосистема Альфа',
+		specialization: 'Стажировка (frontend-разработчик)',
+		startYear: '2022',
+		startMonth: 'Август',
+		endYear: '2023',
+		endMonth: 'Март'
+	},
+	{
+		id: 3,
 		organization: 'Самообучение',
 		specialization: 'Frontend-разработчик',
 		startYear: '2021',
