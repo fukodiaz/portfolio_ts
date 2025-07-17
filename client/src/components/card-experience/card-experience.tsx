@@ -18,7 +18,11 @@ const CardExperience: FC<ExperienceData> = (props) => {
 				</div>
 				<div className={styles.innerBoxDescrExperience}>
 					<p className={styles.dateExperience}>
-						{startMonth} {startYear} - {endMonth} {endYear}
+						{startMonth} {startYear}
+						{
+							endYear || endMonth ? 
+									(<span> - {endMonth} {endYear}</span>) : null
+						}
 					</p>
 					<p className={styles.specializationExper}>
 						{specialization}

@@ -4,6 +4,7 @@ import tasks from './png/tasks.png'
 import recipes from './png/recipes.png'
 import table from './png/table.png'
 import sedona from './png/sedona.png'
+import velo from './png/velo.png'
 
 export type TypeProject = {
 	id: number | string,
@@ -19,14 +20,23 @@ export const projectsData: TypeProject[] = [
 	{
 		id: 1,
 		title: 'BEL-go',
-		description: 'Личный учебный проект приложения, предусматривающего возможность аренды жилья из предложенных вариантов в одном из четырех городов Бельгии',
-		elsStack: ['React', 'Redux', 'Less', 'PHP 8', 'Slim 4', 'MySQL'],
+		description: 'Личный учебный проект, предусматривающего возможность аренды жилья в одном из четырех городов Бельгии',
+		elsStack: ['React', 'Redux', 'Less', 'Laravel 10', 'MySQL'],
 		code: 'https://github.com/fukodiaz/BEL_go',
 		deploy: 'https://bel-go.vercel.app/',
 		image: bel_go
 	},
 	{
 		id: 2,
+		title: 'VELO SHOP',
+		description: 'Учебный проект, предполагавший создание интернет-магазина на bitrix',
+		elsStack: ['Bitrix', 'jQuery', 'Bootstrap'],
+		code: 'https://github.com/fukodiaz/velo-bitrix',
+		// deploy: 'https://bel-go.vercel.app/',
+		image: velo
+	},
+	{
+		id: 3,
 		title: 'Admin-account',
 		description: 'Учебный проект, подразумевающий создание личного кабинета администратора системы',
 		elsStack: ['React', 'Redux', 'Less', 'Node.js', 'Redis'],
@@ -35,7 +45,7 @@ export const projectsData: TypeProject[] = [
 		image: admin
 	},
 	{
-		id: 3,
+		id: 4,
 		title: 'Tasks',
 		description: 'Приложение, позволяющее создавать, редактировать, распределять задачи в рамках определенных проектов',
 		elsStack: ['React', 'Redux', 'SCSS'],
@@ -44,7 +54,7 @@ export const projectsData: TypeProject[] = [
 		image: tasks
 	},
 	{
-		id: 4,
+		id: 5,
 		title: 'Recipe Book',
 		description: 'Приложение, позволяющее осуществлять некоторые опции (редактирование, добавление и т.д.) со списком рецептов и ингредиентов',
 		elsStack: ['Angular', 'Firebase', 'Bootstrap 3'],
@@ -53,7 +63,7 @@ export const projectsData: TypeProject[] = [
 		image: recipes
 	},
 	{
-		id: 5,
+		id: 6,
 		title: 'Table',
 		description: 'Выполненное мною тестовое задание, предполагавшее создание таблицы, отображающей данные пользователей',
 		elsStack: ['React', 'Redux', 'Less'],
@@ -62,7 +72,7 @@ export const projectsData: TypeProject[] = [
 		image: table
 	},
 	{
-		id: 6,
+		id: 7,
 		title: 'Sedona',
 		description: 'Cтатический сайт "Sedona" на основе макетов HTML Academy',
 		elsStack: ['Less', 'JavaScript'],

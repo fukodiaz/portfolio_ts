@@ -13,13 +13,31 @@ export const experienceData: ExperienceData[] = [
 		id: 1,
 		organization: 'Самообучение',
 		specialization: 'Разработка web-сервисов на PHP',
+		startYear: '2025',
+		startMonth: 'Февраль',
+		// endYear: '2025',
+		// endMonth: 'Январь'
+	},
+	{
+		id: 2,
+		organization: 'Intelsib',
+		specialization: 'работа - младший программист на PHP',
+		startYear: '2024',
+		startMonth: 'Январь',
+		endYear: '2025',
+		endMonth: 'Январь'
+	},
+	{
+		id: 3,
+		organization: 'Самообучение',
+		specialization: 'Разработка web-сервисов на PHP',
 		startYear: '2023',
 		startMonth: 'Март',
 		endYear: '2023',
 		endMonth: 'Сентябрь'
 	},
 	{
-		id: 2,
+		id: 4,
 		organization: 'Экосистема Альфа',
 		specialization: 'Стажировка (frontend-разработчик)',
 		startYear: '2022',
@@ -28,7 +46,7 @@ export const experienceData: ExperienceData[] = [
 		endMonth: 'Март'
 	},
 	{
-		id: 3,
+		id: 5,
 		organization: 'Самообучение',
 		specialization: 'Frontend-разработчик',
 		startYear: '2021',

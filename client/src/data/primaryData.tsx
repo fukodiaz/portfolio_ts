@@ -11,8 +11,8 @@ interface PrimaryData {
 export const primaryData: PrimaryData = {
 	name: 'Илья Степаненко',
 	title: 'Web-разработчик',
-	descriptionFirst: 'Frontend-часть создаю на основе React+Redux, а также на Angular.',
-	descriptionSecond: 'Backend пишу на PHP 7-8. Из фреймворков PHP на данный момент использую только Slim 4.',
+	descriptionFirst: 'Мой основной стек - PHP/JS/MySQL. Разрабатываю сайты на CMS (Bitrix, WordPress). Из фреймворков работаю с Laravel, также есть небольшой опыт с Yii, Yii2.',
+	descriptionSecond: 'В части фронтенда использую jQuery. Есть хорошая практика с React, изучал  Angular.',
 	descriptionThird: 'Работал с такими базами данных, СУБД, как MySQL, SQLite, redis и mongoDB.',
 	image: './Antwerp_1.jpg'
 }

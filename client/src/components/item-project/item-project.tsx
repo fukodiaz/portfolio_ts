@@ -24,10 +24,14 @@ const ItemProject: FC<TypeProject> = (props) => {
 					<img  src={image ? image : ''} alt={title}
 							className={styles.imgProject} />
 					<div className={styles.boxLinksProject}>
-						<a href={deploy} target='_blank' rel='noreferrer'
-							className={styles.linkProject}>
-							<FaPlay className={styles.iconLinkProject} />
-						</a>
+						{
+							deploy ? (
+								<a  href={deploy} target='_blank' rel='noreferrer'
+									className={styles.linkProject}>
+									<FaPlay className={styles.iconLinkProject} />
+								</a>
+							) : null
+						}
 						<a href={code} target='_blank' rel='noreferrer'
 							className={styles.linkProject}>
 							<FaCode className={styles.iconLinkProject} />

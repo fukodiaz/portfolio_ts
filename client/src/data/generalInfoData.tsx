@@ -7,7 +7,8 @@ export type TypeJeneralInfo = {
 
 export const jeneralInfoData: TypeJeneralInfo = {
 	title: 'Немного обо мне',
-	descriptionFirst: 'В настоящее время работаю и развиваюсь как web-разработчик. Практикую и совершенствую реализацию серверной части приложений на PHP. Ранее писал простые RESTful сервисы на Express.js. При этом использовал для работы с данными MySQL, SQLite, redis и mongoDB.',
-	descriptionSecond: 'В процессе создания клиентской части приложений использую React+Redux/Redux-Toolkit и Angular в качестве технологической основы.',
-	descriptionThird: 'Разрабатывал клиентскую сторону видеочата на базе WebRTC+WebSockets. Docker/docker-compose применял при локальной разработке и деплое. Также при создании проектов использовал Gulp, Webpack, Babel.'
+	descriptionFirst: 'В настоящее время работаю и развиваюсь как web-разработчик. Как упоминул в верхней части сайта активно работал с Bitrix (создание кастомных компонентов, доработка модулей и другие задачи), Wordpress, а также в меньшем объёме с MODx, OpenCart, Joomla.',
+	// descriptionSecond: 'В процессе создания клиентской части приложений использую React+Redux/Redux-Toolkit и Angular в качестве технологической основы.',
+	descriptionSecond: 'Из PHP фреймворков пишу собственный проект на Laravel, вносил правки в сайты на Yii. Для работы с данными использовал MySQL, SQLite, redis и mongoDB.',
+	descriptionThird: 'Способен разобраться с настройками конфигов nginx, apache и docker.'
 }
